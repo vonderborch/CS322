@@ -1,0 +1,40 @@
+<automaton>
+  <States>
+    <STATE>A</STATE>
+    <STATE>B</STATE>
+  </States>
+  
+  <InputSymbols>
+    <input>0</input>
+    <input>1</input>
+  </InputSymbols>
+  
+  <Transitions>
+    <transition>
+      <f>A</f>
+      <i>0</i>
+      <t>B</t>
+    </transition>
+    <transition>
+      <f>B</f>
+      <i>0</i>
+      <t>A</t>
+    </transition>
+    <transition>
+      <f>B</f>
+      <i>1</i>
+      <t>B</t>
+    </transition>
+    <transition>
+      <f>A</f>
+      <i>1</i>
+      <t>A</t>
+    </transition>
+  </Transitions>
+  
+  <INITIIAL>A</INITIIAL>
+  
+  <FinalStates>
+    <FINAL>B</FINAL>
+  </FinalStates>
+</automaton>

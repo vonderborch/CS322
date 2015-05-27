@@ -1,0 +1,37 @@
+<automaton>
+  <STATE>A</STATE>
+  <STATE>B</STATE>
+  
+  <INS>
+    <input>0</input>
+    <input>1</input>
+  </INS>
+  
+  <TS>
+    <tr>
+      <f>A</f>
+      <i>0</i>
+      <t>B</t>
+    </tr>
+    <tr>
+      <f>B</f>
+      <i>0</i>
+      <t>A</t>
+    </tr>
+    <tr>
+      <f>B</f>
+      <i>1</i>
+      <t>B</t>
+    </tr>
+    <tr>
+      <f>A</f>
+      <i>1</i>
+      <t>A</t>
+    </tr>
+  
+</TS>
+  
+  <INI>A</INI>
+  
+  <FINAL>B</FINAL>
+</automaton>

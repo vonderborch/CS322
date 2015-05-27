@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<automaton>
+  <States>
+    <state>q0</state>
+    <state>q1</state>
+    <state>q2</state>
+    <state>q3</state>
+  </States>
+  
+  <InputSymbols>
+    <symbol>0</symbol>
+    <symbol>1</symbol>
+  </InputSymbols>
+  
+  <Transitions>
+    <transition>
+      <from>q0</from>
+      <state>0</state>
+      <to>q2</to>
+    </transition>
+    <transition>
+      <from>q0</from>
+      <state>1</state>
+      <to>q1</to>
+    </transition>
+    <transition>
+      <from>q1</from>
+      <state>0</state>
+      <to>q3</to>
+    </transition>
+    <transition>
+      <from>q1</from>
+      <state>1</state>
+      <to>q0</to>
+    </transition>
+    <transition>
+      <from>q2</from>
+      <state>0</state>
+      <to>q0</to>
+    </transition>
+    <transition>
+      <from>q2</from>
+      <state>1</state>
+      <to>q3</to>
+    </transition>
+    <transition>
+      <from>q3</from>
+      <state>0</state>
+      <to>q1</to>
+    </transition>
+    <transition>
+      <from>q3</from>
+      <state>1</state>
+      <to>q2</to>
+    </transition>
+  </Transitions>
+  
+  <Initial>q0</Initial>
+  
+  <FinalStates>
+    <state>q0</state>
+    <state>q3</state>
+  </FinalStates>
+</automaton>

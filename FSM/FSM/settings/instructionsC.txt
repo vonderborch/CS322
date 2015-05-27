@@ -1,0 +1,16 @@
+Use ";" (without quatations) to seperate commands.
+
+Form of Commands (<command type>value you want):
+ - To declare a command to be a state: <state>value
+ - To declare a command to be a final state: <final>value
+ - To declare a command to be the initial state: <initial>value
+ - To declare a command to be an input symbol: <input>value
+ - To declare a command to be a transition state: <t><from>value<input>value<to>value
+
+Example DFA's:
+- <state>a;<state>b;<final>b;<initial>a;<input>0;<t><from>a<input>0<to>b;
+- <state>S;<state>U;<state>V;<state>Q;<final>Q;<initial>S;<input>a;<input>b;<t><from>S<input>a<to>U;<t><from>S<input>b<to>V;<t><from>U<input>a<to>Q;<t><from>U<input>b<to>V;<t><from>V<input>a<to>U;<t><from>V<input>b<to>Q;<t><from>Q<input>a<to>Q;<t><from>Q<input>b<to>Q
+- <state>0;<state>1;<state>2;<state>3;<state>4;<final>4;<initial>1;<input>red;<input>green;<input>yellow;<t><from>0<input>red<to>0;<t><from>0<input>green<to>0;<t><from>0<input>yellow<to>0;<t><from>1<input>red<to>2;<t><from>1<input>green<to>0;<t><from>1<input>yellow<to>0;<t><from>2<input>red<to>0;<t><from>2<input>green<to>3;<t><from>2<input>yellow<to>0;<t><from>3<input>red<to>0;<t><from>3<input>green<to>0;<t><from>3<input>yellow<to>4;<t><from>4<input>red<to>2;<t><from>4<input>green<to>0;<t><from>4<input>yellow<to>4
+- <state>q0;<state>q1;<state>q2;<state>q3;<final>q0;<final>q1;<final>q2;<initial>q0;<input>1;<input>0;<t><from>q0<input>1<to>q0;<t><from>q0<input>0<to>q1;<t><from>q1<input>1<to>q0;<t><from>q1<input>0<to>q2;<t><from>q2<input>1<to>q0;<t><from>q2<input>0<to>q3;<t><from>q3<input>1<to>q3;<t><from>q3<input>0<to>q3
+- <state>A;<state>B;<state>C;<state>D;<state>E;<final>A;<final>B;<final>D;<initial>A;<input>1;<input>0;<t><from>A<input>1<to>D;<t><from>A<input>0<to>B;<t><from>B<input>1<to>C;<t><from>B<input>0<to>B;<t><from>C<input>1<to>C;<t><from>C<input>0<to>B;<t><from>D<input>1<to>D;<t><from>D<input>0<to>E;<t><from>E<input>1<to>D;<t><from>E<input>0<to>E
+- <state>S0;<state>S1;<state>S2;<state>N;<final>S0;<final>S1;<final>S2;<initial>S0;<input>a;<input>b;<t><from>S0<input>0<to>S0;<t><from>S0<input>1<to>S1;<t><from>S1<input>0<to>S0;<t><from>S1<input>1<to>S2;<t><from>S2<input>0<to>N;<t><from>S2<input>1<to>S2;<t><from>N<input>0<to>N;<t><from>N<input>1<to>N

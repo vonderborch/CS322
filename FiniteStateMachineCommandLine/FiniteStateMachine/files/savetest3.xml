@@ -1,0 +1,1 @@
+<automaton><States><state>a</state></States><InputSymbols><symbol>1</symbol></InputSymbols><Transitions><transition><from>a</from><state>1</state><to>a</to></transition></Transitions><Initial>a</Initial><FinalStates><state>a</state></FinalStates></automaton>

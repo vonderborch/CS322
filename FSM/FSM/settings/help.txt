@@ -1,0 +1,30 @@
+What is a Finite State Machine/Automaton: "A finite-state machine (FSM) or finite-state automaton (plural: automata), or simply a state machine, is a mathematical model of computation used to design both computer programs and sequential logic circuits. It is conceived as an abstract machine that can be in one of a finite number of states. The machine is in only one state at a time; the state it is in at any given time is called the current state. It can change from one state to another when initiated by a triggering event or condition; this is called a transition. A particular FSM is defined by a list of its states, and the triggering condition for each transition." (Wikipedia)
+
+Finite State Machine/Automaton Components
+  - What are States: States are the "waypoints" for the automaton, the valid "places" that it can be at any one time.
+  - What is the Initial State: The initial state is the state that automaton starts at.
+  - What are Final States: Final states are the valid destination states for the automaton.
+  - What are Input Symbols: Input symbols are the valid symbols that can be used in an input string for the automaton.
+  - What are Transitions: Transitions define which state the automaton goes to ("To") when an input symbol ("Input") is used in a string while at a certain state ("From").
+  - For an automaton to be valid, it must have at least one State, an Initial State (which should be one of the States), at least one Final State (which should be one of the States), at least one Input Symbol, and at least one valid Transition and/or path of Transitions which reaches a Final State and is made up of valid States and Input Symbols.
+- More information can be found at: http://en.wikipedia.org/wiki/Finite-state_machine
+
+Program Components
+  - Create Automaton via Commands: One can create a new automaton from here using a text box and various commands.
+      - The "Save Automaton" button will make the program save the current automaton to the location and file name that the user provides using the dialog box, provided that it is valid.
+      - The "Test Automaton" button will allow one to test the current automaton that is being worked on, provided that it is valid.
+  - Create Automaton: One can create a new automaton from here.
+      - One can add, edit, or remove components to the new automaton using the buttons.
+      - The "Save Automaton" button will make the program save the current automaton to the location and file name that the user provides using the dialog box, provided that it is valid.
+      - The "Test Automaton" button will allow one to test the current automaton that is being worked on, provided that it is valid.
+  - Edit Automaton: One can edit the current automaton (or load a new one) from here.
+      - One can add, edit, or remove components to the new automaton using the buttons.
+      - The "Save Automaton" button will make the program save the current automaton to the location and file name that the user provides using the dialog box, provided that it is valid.
+      - The "Test Automaton" button will allow one to test the current automaton that is being worked on, provided that it is valid.
+  - Test Automaton: One can test the current automaton (or load a new one) from here.
+      - The "Edit Automaton" button will allow one to edit the automaton currently being tested (using the graphical editor).
+      - The "Test String" button will test the string inputted in the text box above it against the current automaton, and display the results of the test below.
+  - Help: Displays the help file (this file).
+  - Readme: Displays the readme file.
+  - About: Opens the about box for the program.
+  - Exit: Exits the program.
